@@ -1,0 +1,68 @@
+Start by making two classes that will relate to each other
+
+class Song
+
+	attr_accessor :title, :artist
+	
+	def initialize(title)
+		@title = title
+	end
+
+end 
+
+
+class Artist
+
+attr_accesor :name
+
+def initialize(name)	
+	@name = name
+	end 
+
+end
+
+Now make some instances to test the relationship:
+
+power = Song.new(“Power”)
+power.title
+
+kanye = Artist.new(“Kanye West”)
+
+power.artist = kanye
+
+power.artist
+
+Now to demonstrate has many relationship:
+
+Add a method to add songs, and a method to view all the songs
+
+class Artist
+
+attr_accessor :name
+
+def initialize(name)	
+	@name = name
+	@songs = []
+	end 
+
+	def add_song(song)
+		@songs << song
+	end 
+	
+	def discography
+		songs
+	end
+
+
+end
+
+Add some songs
+jesus_walks = Song.new(“Jesus Walks”)
+stronger = Song.new(“Stronger”)
+heartless = Song.new(“Heartless”)
+
+kanye.add_song(jesus_walks)
+kanye.add_song(stronger)
+kanye.add_song(heartless)
+
+kanye.discography
