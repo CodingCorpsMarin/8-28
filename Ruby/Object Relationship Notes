@@ -1,9 +1,13 @@
 
 Competencies 
 
-Belongs to: object is one of many that another object has. For example - a book belongs to an author who has written many books
-Has many: flipside of belongs to. An object has many of another object. For example - a store has many CDs, an orange tree has many oranges. Think of it as an object has an array of other objects
-We can link object classes together by their relationships through attributes, for example, a book instantiated with an author name can link to an author with that name. This is called “collaborating objects”
+Belongs to: object is one of many that another object has. For example - a book belongs to an author 
+who has written many books
+Has many: flipside of belongs to. An object has many of another object. 
+For example - a store has many CDs, an orange tree has many oranges. Think of it as an object has an array of other objects
+We can link object classes together by their relationships through attributes,
+for example, a book instantiated with an author name can link to an author with that name. 
+This is called “collaborating objects”
 
 
 Applications
